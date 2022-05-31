@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>HLD-CSR</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/customer.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/CSR.css">
+
+    <style>
+        .banner-text h1 span {
+            font-weight: 300;
+        }
+        
+        .dropdown-menu.megamenu.show {
+            padding: 0em;
+            margin-top: 22px;
+            border: 1px solid #d8a84d;
+            margin-right: -101px;
+            max-width: 94%;
+        }
+        
+        @media all and (min-width: 992px) {
+            .navbar .has-megamenu {
+                position: static !important;
+            }
+            .navbar .megamenu {
+                right: 5%;
+                max-width: 78%;
+                margin: 0 0 0 auto;
+            }
+            .show:before {
+                content: "";
+                border-bottom: 15px solid #d8a84d;
+                border-right: 17px solid transparent;
+                border-left: 17px solid transparent;
+                position: absolute;
+                top: -15px;
+                left: 250px;
+                z-index: 10;
+            }
+        }
+        
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            line-height: 0.5;
+            /* color: #d8a84d; */
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            background-color: #d8a84d;
+            border: 1px solid transparent;
+            padding: 5px 22px 4px;
+            font-size: 1rem;
+            border-radius: 0.25rem;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+        
+        .btn:hover {
+            background-color: #80a9af;
+        }
+        
+        @media(max-width: 991px) {
+            .navbar.fixed-top .navbar-collapse,
+            .navbar.sticky-top .navbar-collapse {
+                overflow-y: auto;
+                max-height: 90vh;
+                margin-top: 10px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center">
+            <a href="index.html" class="logo me-auto"><img src="assets/p1/home logo.png" alt=""></a>
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link active" href="index.html">Home</a></li>
+                    <li><a class="nav-link " href="about.html">About</a></li>
+                    <li><a class="nav-link " href="services">Resources</a></li>
+                    <li class="nav-item dropdown has-megamenu ">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> ESTIMATOR BY LOCATION </a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <form method="POST" action="" enctype="multipart/form-data" style=" padding: 17px 56px 14px;
+                        margin: 0px 0px 1px -47px;">
+                                <div class="d-flex ai-center">
+                                    <h6 class="fw-700 mb-0" style="font-weight: 700;font-size: 17px;">MORTGAGE ESTIMATOR
+                                    </h6>
+                                    <select class="form-select mx-4" id="state" name="state" style="font-size:1.5rem;">
+                                  <option value="selected disabled">Select State</option>
+                                                                          <option value="al">Alabama</option>
+                                                                          <option value="az">Arizona</option>
+                                                                          <option value="ar">Arkansas</option>
+                                                                          <option value="ca">California</option>
+                                                                          <option value="co">Colorado</option>
+                                                                          <option value="ct">Connecticut</option>
+                                                                          <option value="de">Delaware</option>
+                                                                          <option value="dc">District of Columbia</option>
+                                                                          <option value="fl">Florida</option>
+                                                                          <option value="ga">Georgia</option>
+                                                                          <option value="id">Idaho</option>
+                                                                          <option value="il">Illinois</option>
+                                                                          <option value="in">Indiana</option>
+                                                                          <option value="ia">Iowa</option>
+                                                                          <option value="ks">Kansas</option>
+                                                                          <option value="ky">Kentucky</option>
+                                                                          <option value="la">Louisiana</option>
+                                                                          <option value="me">Maine</option>
+                                                                          <option value="md">Maryland</option>
+                                                                          <option value="ma">Massachusetts</option>
+                                                                          <option value="mi">Michigan</option>
+                                                                          <option value="mn">Minnesota</option>
+                                                                          <option value="ms">Mississippi</option>
+                                                                          <option value="mo">Missouri</option>
+                                                                          <option value="mt">Montana</option>
+                                                                          <option value="ne">Nebraska</option>
+                                                                          <option value="nv">Nevada</option>
+                                                                          <option value="nh">New Hampshire</option>
+                                                                          <option value="nj">New Jersey</option>
+                                                                          <option value="nm">New Mexico</option>
+                                                                          <option value="ny">New York</option>
+                                                                          <option value="nc">North Carolina</option>
+                                                                          <option value="nd">North Dakota</option>
+                                                                          <option value="oh">Ohio</option>
+                                                                          <option value="ok">Oklahoma</option>
+                                                                          <option value="or">Oregon</option>
+                                                                          <option value="pa">Pennsylvania</option>
+                                                                          <option value="ri">Rhode Island</option>
+                                                                          <option value="sc">South Carolina</option>
+                                                                          <option value="sd">South Dakota</option>
+                                                                          <option value="tn">Tennessee</option>
+                                                                          <option value="tx">Texas</option>
+                                                                          <option value="ut">Utah</option>
+                                                                          <option value="vt">Vermont</option>
+                                                                          <option value="va">Virginia</option>
+                                                                          <option value="wa">Washington</option>
+                                                                          <option value="wv">West Virginia</option>
+                                                                          <option value="wi">Wisconsin</option>
+                                                                          <option value="wy">Wyoming</option>
+                                 </select>
+                                    <button class="button-btn1">Next<i class="bx bx-right-arrow-alt" ></i> </button>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+        <!-- ======= Portfolio Details Section ======= -->
+        <section id="read-blog" class="read-blogimg">
+            <div class="wrapper">
+                <div id="image">
+                    <img src="assets/p1/credit image.jpeg" alt="">
+                </div>
+                <!-- <div class="row gy-4">
+                    <div class="col-lg-8">
+                        <div class="swiper-wrapper align-items-center">
+                            <div class="swiper-slide">
+                                <img src="assets/p1/imgmobile.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col-lg-6">
+                    <div class="read-blog">
+                        <!-- <span class="sub-title" style="margin-left: 42px;font-size: 29px;
+                            font-weight: bold;"> Let's Connect </span> -->
+                        <h1>Credit Score Reports</h1>
+                        <p>Understanding the credit concept for any borrower and lender is an important consideration for the lending process. This topic is not only important for people seeking a physician loan, but for anyone looking for financing. The
+                            three major repositories are TransUnion, Experian, and Equifax. These firms send information from your creditors in a format that shows the mane of the creditor, the origination of the dept, the high balance amount, the current
+                            balance amount, and the payment history. This data merged into a single report so that duplicate accounts are omitted, and lenders see how much debt a potential borrower has, and how has that borrower paid those charges back
+                            over time. This payment history has a significant impact on one credit score. Each of the credit agencies provide a credit risk score that lenders evaluate in the underwriting process. Typically, credit scores over 720 are
+                            deemed acceptable for lending. That, however, is not the only factor. Some firms require a minimum active trade line history of 2 years and require at least 4 open active accounts. This history may provide lenders with a better
+                            understanding of a potential borrowers’ likelihood of timely payments. Some physician lenders will consider loans with credit scores under 720, however, you might expect to be offered a higher interest rate due to the additional
+                            default risk. People can contact the credit agencies to order their credit report on their own. Experian: 888.397.3742 or www.experian.com/reportaccess TransUnion: 800.916.8800 or transunion.com/myoptions Equifax: 800.685.1111
+                            or Equifax/fcra Ordering your own report can be informative so you can see what the lender sees and update incorrect’s statement’s information.</p>
+                        <!-- <form style="margin-left: 46px; width: 1041;">
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" style="height:39px;padding:6px 24px; border: 1px;" placeholder="First name" required><i class="bx bx-user" style="position: relative;
+                                        bottom: 29px;left: 5px;"></i>
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" style="height: 39px;padding: 6px 24px;border: 1px;" placeholder="Email" required><i class="bx bx-mail-send" style="position: relative;
+                                        bottom: 29px;left: 5px;"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" style="height: 39px;padding: 6px 24px;border: 1px;" placeholder="Phone"><i class="bx bx-phone-call" style="position: relative;
+                                        bottom: 29px;left: 5px;"></i>
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" style="height: 39px;padding: 6px 24px;border: 1px;" placeholder="Subject"><i class="bx bxs-edit-alt" style="position: relative;
+                                        bottom: 29px;left: 5px;"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <i class="bx bx-message-square-detail" style="position: relative;top:47px;left:4px;"></i> <textarea name="message" class="form-control" id="message" cols="30" rows="8" required="" data-error="Write your message" placeholder="Message"
+                                        style="border:1px;"></textarea>
+                                </div>
+                            </div>
+                            <button type="send" class="btn btn-primarysend" style="  padding: 12px;font-size: 15px;
+                                margin: 10px 0px 0px 1px;background: #dbaf5d;border: 1px solid #dbaf5d;
+                                color: #fff;">Send Message</button>
+                        </form> -->
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+        </section>
+        <!-- End Portfolio Details Section -->
+
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <!-- ======= Footer ======= -->
+    <footer>
+        <div class="footercontent">
+            <div class="logopld">
+                <img src="assets/p1/home logo.png" alt="">
+            </div>
+            <div class="copyright">
+                <p>copyright&copy 2022 PLD</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- End Footer -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

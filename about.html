@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>About-HLD</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/p1/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/customer.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <style>
+        .banner-text h1 span {
+            font-weight: 300;
+        }
+        
+        .dropdown-menu.megamenu.show {
+            padding: 0em;
+            margin-top: 22px;
+            border: 1px solid #d8a84d;
+            margin-right: -101px;
+            max-width: 94%;
+        }
+        
+        @media all and (min-width: 992px) {
+            .navbar .has-megamenu {
+                position: static !important;
+            }
+            .navbar .megamenu {
+                right: 5%;
+                max-width: 78%;
+                margin: 0 0 0 auto;
+            }
+            .show:before {
+                content: "";
+                border-bottom: 15px solid #d8a84d;
+                border-right: 17px solid transparent;
+                border-left: 17px solid transparent;
+                position: absolute;
+                top: -15px;
+                left: 250px;
+                z-index: 10;
+            }
+        }
+        
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            line-height: 0.5;
+            /* color: #d8a84d; */
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            background-color: #d8a84d;
+            border: 1px solid transparent;
+            padding: 5px 22px 4px;
+            font-size: 1rem;
+            border-radius: 0.25rem;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+        
+        .btn:hover {
+            background-color: #80a9af;
+        }
+        
+        @media(max-width: 991px) {
+            .navbar.fixed-top .navbar-collapse,
+            .navbar.sticky-top .navbar-collapse {
+                overflow-y: auto;
+                max-height: 90vh;
+                margin-top: 10px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center">
+            <a href="index.html" class="logo me-auto"><img src="assets/p1/home logo.png" alt=""></a>
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link active" href="index.html">Home</a></li>
+                    <li><a class="nav-link " href="about.html">About</a></li>
+                    <li><a class="nav-link " href="services">Resources</a></li>
+                    <li class="nav-item dropdown has-megamenu ">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> ESTIMATOR BY LOCATION </a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <form method="POST" action="" enctype="multipart/form-data" style=" padding: 17px 56px 14px;
+                        margin: 0px 0px 1px -47px;">
+                                <div class="d-flex ai-center">
+                                    <h6 class="fw-700 mb-0" style="font-weight: 700;font-size: 17px;">MORTGAGE ESTIMATOR
+                                    </h6>
+                                    <select class="form-select mx-4" id="state" name="state" style="font-size:1.5rem;">
+                                  <option value="selected disabled">Select State</option>
+                                                                          <option value="al">Alabama</option>
+                                                                          <option value="az">Arizona</option>
+                                                                          <option value="ar">Arkansas</option>
+                                                                          <option value="ca">California</option>
+                                                                          <option value="co">Colorado</option>
+                                                                          <option value="ct">Connecticut</option>
+                                                                          <option value="de">Delaware</option>
+                                                                          <option value="dc">District of Columbia</option>
+                                                                          <option value="fl">Florida</option>
+                                                                          <option value="ga">Georgia</option>
+                                                                          <option value="id">Idaho</option>
+                                                                          <option value="il">Illinois</option>
+                                                                          <option value="in">Indiana</option>
+                                                                          <option value="ia">Iowa</option>
+                                                                          <option value="ks">Kansas</option>
+                                                                          <option value="ky">Kentucky</option>
+                                                                          <option value="la">Louisiana</option>
+                                                                          <option value="me">Maine</option>
+                                                                          <option value="md">Maryland</option>
+                                                                          <option value="ma">Massachusetts</option>
+                                                                          <option value="mi">Michigan</option>
+                                                                          <option value="mn">Minnesota</option>
+                                                                          <option value="ms">Mississippi</option>
+                                                                          <option value="mo">Missouri</option>
+                                                                          <option value="mt">Montana</option>
+                                                                          <option value="ne">Nebraska</option>
+                                                                          <option value="nv">Nevada</option>
+                                                                          <option value="nh">New Hampshire</option>
+                                                                          <option value="nj">New Jersey</option>
+                                                                          <option value="nm">New Mexico</option>
+                                                                          <option value="ny">New York</option>
+                                                                          <option value="nc">North Carolina</option>
+                                                                          <option value="nd">North Dakota</option>
+                                                                          <option value="oh">Ohio</option>
+                                                                          <option value="ok">Oklahoma</option>
+                                                                          <option value="or">Oregon</option>
+                                                                          <option value="pa">Pennsylvania</option>
+                                                                          <option value="ri">Rhode Island</option>
+                                                                          <option value="sc">South Carolina</option>
+                                                                          <option value="sd">South Dakota</option>
+                                                                          <option value="tn">Tennessee</option>
+                                                                          <option value="tx">Texas</option>
+                                                                          <option value="ut">Utah</option>
+                                                                          <option value="vt">Vermont</option>
+                                                                          <option value="va">Virginia</option>
+                                                                          <option value="wa">Washington</option>
+                                                                          <option value="wv">West Virginia</option>
+                                                                          <option value="wi">Wisconsin</option>
+                                                                          <option value="wy">Wyoming</option>
+                                 </select>
+                                    <button class="button-btn1" style="bottom: 5px;">Next<i class="bx bx-right-arrow-alt" ></i> </button>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+        <!-- ======= Portfolio Details Section ======= -->
+        <section id="portfolio-details" class="portfolio-details">
+            <div class="wrapper">
+                <div id="imageabt">
+                    <img src="assets/p1/aboutimage.jpg" alt="">
+                </div>
+                <!-- <div class="row gy-4">
+                    <div class="col-lg-8"> -->
+                <!-- <div class="portfolio-details-slider swiper"> -->
+                <!-- <div class="swiper-wrapper align-items-center">
+                            <div class="swiper-slide">
+                                <img src="assets/p1/imgmobile.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col-lg-4">
+                    <div class="portfolio-description">
+                        <span class="sub-title"> ABOUT THIS SITE </span>
+                        <h2>What makes us unique?</h2>
+                        <p>
+                            Dolor sit amet conseetur diisci velit sed Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore meniam, sed do eiusmod tempor incididunt ut labore et
+                        </p>
+                    </div>
+                    <div class="container-pill">
+                        <ul class="nav nav-pills ">
+                            <li><a data-toggle="pill" href="#menu1"><i class="bx bx-bullseye"></i>Our Mission</a></li>
+                            <li><a data-toggle="pill" href="#menu2"><i class="bx bx-show-alt"></i>Our Vision</a></li>
+                            <li><a data-toggle="pill" href="#menu3"><i class="bx bx-pyramid"></i>Over Goal</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="menu1" class="tab-pane active">
+                                <!-- <h3>Menu 1</h3> -->
+                                <p>Compnay conseetur diisci velit sed qui Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore meniam, sed do eiusmod tempor incididunt ut labore et do.</p>
+                            </div>
+                            <div id="menu2" class="tab-pane fade">
+                                <!-- <h3>Menu 2</h3> -->
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less.</p>
+                            </div>
+                            <div id="menu3" class="tab-pane fade">
+                                <!-- <h3>Menu 3</h3> -->
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look like.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-best">
+                        <ul>
+                            <li>
+                                <div>
+                                    <h4>Best Mortgage Since 2015.</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Portfolio Details Section -->
+
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <!-- ======= Footer ======= -->
+    <footer>
+        <div class="footercontent">
+            <div class="logopld">
+                <img src="assets/p1/home logo.png" alt="">
+            </div>
+            <div class="copyright">
+                <p>copyright&copy 2022 PLD</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- End Footer -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

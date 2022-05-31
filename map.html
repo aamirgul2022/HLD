@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>HLD-Home</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/accessibility.js"></script>
+
+    <!--  Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/customer.css">
+    <link rel="stylesheet" href="assets/css/map.css">
+
+    <style>
+        .banner-text h1 span {
+            font-weight: 300;
+        }
+        
+        .dropdown-menu.megamenu.show {
+            padding: 0em;
+            margin-top: 22px;
+            border: 1px solid #d8a84d;
+            margin-right: -101px;
+            max-width: 94%;
+        }
+        
+        @media all and (min-width: 992px) {
+            .navbar .has-megamenu {
+                position: static !important;
+            }
+            .navbar .megamenu {
+                right: 5%;
+                max-width: 78%;
+                margin: 0 0 0 auto;
+            }
+            .show:before {
+                content: "";
+                border-bottom: 15px solid #d8a84d;
+                border-right: 17px solid transparent;
+                border-left: 17px solid transparent;
+                position: absolute;
+                top: -15px;
+                left: 250px;
+                z-index: 10;
+            }
+        }
+        
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            line-height: 0.5;
+            /* color: #d8a84d; */
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            background-color: #d8a84d;
+            border: 1px solid transparent;
+            padding: 5px 22px 4px;
+            font-size: 1rem;
+            border-radius: 0.25rem;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+        
+        .btn:hover {
+            background-color: #80a9af;
+        }
+        
+        @media(max-width: 991px) {
+            .navbar.fixed-top .navbar-collapse,
+            .navbar.sticky-top .navbar-collapse {
+                overflow-y: auto;
+                max-height: 90vh;
+                margin-top: 10px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center">
+            <a href="index.html" class="logo me-auto"><img src="assets/p1/home logo.png" alt=""></a>
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="about.html">About</a></li>
+                    <li><a class="nav-link scrollto" href="services">Resources</a></li>
+                    <li class="nav-item dropdown has-megamenu ">
+                        <a class="nav-link dropdown-toggle" href="map.html" data-bs-toggle="dropdown"> ESTIMATOR BY LOCATION </a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <form method="POST" action="" enctype="multipart/form-data" style=" padding: 17px 56px 14px;
+                            margin: 0px 0px 1px -47px;">
+                                <div class="d-flex ai-center">
+                                    <h6 class="fw-700 mb-0" style="font-weight: 700;font-size: 17px;">MORTGAGE ESTIMATOR
+                                    </h6>
+                                    <select class="form-select mx-4" id="state" name="state">
+                                      <option value="selected disabled">Select State</option>
+                                                                              <option value="al">Alabama</option>
+                                                                              <option value="az">Arizona</option>
+                                                                              <option value="ar">Arkansas</option>
+                                                                              <option value="ca">California</option>
+                                                                              <option value="co">Colorado</option>
+                                                                              <option value="ct">Connecticut</option>
+                                                                              <option value="de">Delaware</option>
+                                                                              <option value="dc">District of Columbia</option>
+                                                                              <option value="fl">Florida</option>
+                                                                              <option value="ga">Georgia</option>
+                                                                              <option value="id">Idaho</option>
+                                                                              <option value="il">Illinois</option>
+                                                                              <option value="in">Indiana</option>
+                                                                              <option value="ia">Iowa</option>
+                                                                              <option value="ks">Kansas</option>
+                                                                              <option value="ky">Kentucky</option>
+                                                                              <option value="la">Louisiana</option>
+                                                                              <option value="me">Maine</option>
+                                                                              <option value="md">Maryland</option>
+                                                                              <option value="ma">Massachusetts</option>
+                                                                              <option value="mi">Michigan</option>
+                                                                              <option value="mn">Minnesota</option>
+                                                                              <option value="ms">Mississippi</option>
+                                                                              <option value="mo">Missouri</option>
+                                                                              <option value="mt">Montana</option>
+                                                                              <option value="ne">Nebraska</option>
+                                                                              <option value="nv">Nevada</option>
+                                                                              <option value="nh">New Hampshire</option>
+                                                                              <option value="nj">New Jersey</option>
+                                                                              <option value="nm">New Mexico</option>
+                                                                              <option value="ny">New York</option>
+                                                                              <option value="nc">North Carolina</option>
+                                                                              <option value="nd">North Dakota</option>
+                                                                              <option value="oh">Ohio</option>
+                                                                              <option value="ok">Oklahoma</option>
+                                                                              <option value="or">Oregon</option>
+                                                                              <option value="pa">Pennsylvania</option>
+                                                                              <option value="ri">Rhode Island</option>
+                                                                              <option value="sc">South Carolina</option>
+                                                                              <option value="sd">South Dakota</option>
+                                                                              <option value="tn">Tennessee</option>
+                                                                              <option value="tx">Texas</option>
+                                                                              <option value="ut">Utah</option>
+                                                                              <option value="vt">Vermont</option>
+                                                                              <option value="va">Virginia</option>
+                                                                              <option value="wa">Washington</option>
+                                                                              <option value="wv">West Virginia</option>
+                                                                              <option value="wi">Wisconsin</option>
+                                                                              <option value="wy">Wyoming</option>
+                                     </select>
+                                    <button class="button-btn1" style=" bottom: 5px;">Next<i class="bx bx-right-arrow-alt" ></i> </button>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main class="map">
+        <!-- <div class="wrapper"> -->
+        <div class="wrapper">
+            <div id="container"></div>
+            <div class="container2">
+                <h2> WHAT WE OFFER</h2>
+                <h4>MORTGAGE ESTIMATOR</h4>
+                <p>Access to loan officer, realtors, title companies <br> and loan calculator by selecting the state and county.</p>
+
+                <div mv-app="app1" mv-storage="#data" mv-bar="with clear" mv-plugins="clear">
+                    <select id="countries">
+                    <option>Select Bank</option>
+                    <option value="13">JPMorgan Chase</option>
+                    <option value="34">Bank of America	</option>
+                    <option value="95">Citigroup	</option>
+                    <option value="8">Bank of America	</option>
+                    <option value="3">Citigroup</option><option value="10">Atmore Community Hospital</option>
+                    <option value="85">Wells Fargo	</option>
+                    <option value="86">Morgan Stanley	</option>
+                    <option value="77">Goldman Sachs	</option>
+                    <option value="74">Beacon Behavioral Hospital</option>
+                    <option value="32">Bibb Medical Center</option>
+                    <option value="14">Birmingham VA Medical Center</option>
+                    <option value="15">Brookwood Baptist Medical Center</option>
+                    <option value="41">Bryan W. Whitfield Memorial Hospital</option>
+                    <option value="114">Bryce Hospital</option>
+                    <option value="121">Bullock County Hospital</option>
+                    <option value="120">Central Alabama Veterans Health Care System - East Campus</option>
+                    <option value="87">Central Alabama Veterans Health Care System - West Campus</option>
+                    <option value="31">Cherokee Medical Center</option>
+                    <option value="16">Children's Hospital of Alabama</option>
+                    <option value="29">Choctaw General Hospital</option>
+                    <option value="110">Citizens Baptist Medical Center</option>
+                    <option value="7">Clay County Hospital</option>
+                    <option value="111">Community Hospital</option>
+                    <option value="109">Coosa Valley Medical Center</option>
+                    <option value="75">Crenshaw Community Hospital</option>
+                    <option value="67">Crestwood Medical Center</option>
+                    <option value="88">Crossbridge Behavioral Health</option>
+                    <option value="35">Cullman Regional Medical Center</option>
+                    <option value="28">D.W. McMillan Memorial Hospital</option>
+                    <option value="98">Dale Medical Center</option>
+                    <option value="115">DCH Regional Medical Center</option>
+                    <option value="39">Decatur Morgan Hospital</option>
+                    <option value="40">Decatur Morgan Hospital-Parkway Campus</option>
+                    <option value="55">DeKalb Regional Medical Center</option>
+                    <option value="96">East Alabama Medical Center</option>
+                    <option value="122">East Alabama Medical Center - Lanier</option>
+                    <option value="38">EastPointe Hospital</option>
+                    <option value="124">Elmore Community Hospital</option>
+                    <option value="17">Encompass Health Lakeshore Rehabilitation Hospital</option>
+                    <option value="42">Encompass Health Rehabilitation Hospital of Dothan</option>
+                    <option value="56">Encompass Health Rehabilitation Hospital of Gadsden</option>
+                    <option value="89">Encompass Health Rehabilitation Hospital of Montgomery</option>
+                    <option value="68">Encompass Health Rehabilitation Hospital of North Alabama</option>
+                    <option value="99">Encompass Health Rehabilitation Hospital of Shelby County</option>
+                    <option value="50">Evergreen Medical Center</option>
+                    <option value="52">Fayette Medical Center</option>
+                    <option value="43">Flowers Hospital</option>
+                    <option value="57">Gadsden Regional Medical Center</option>
+                    <option value="18">Grandview Medical Center</option>
+                    <option value="49">Greene County Health System</option>
+                    <option value="63">Grove Hill Memorial Hospital</option>
+                    <option value="61">Hale County Hospital</option>
+                    <option value="108">Helen Keller Hospital</option>
+                    <option value="106">Highlands Medical Center</option>
+                    <option value="19">Hill Crest Behavioral Health Services</option>
+                    <option value="126">Hill Hospital Of Sumter County</option>
+                    <option value="69">Huntsville Hospital</option>
+                    <option value="70">Huntsville Hospital for Women and Children</option>
+                    <option value="78">Infirmary Long Term Acute Care Hospital</option>
+                    <option value="101">Jack Hughston Memorial Hospital</option>
+                    <option value="90">Jackson Hospital</option>
+                    <option value="72">Jackson Medical Center</option>
+                    <option value="30">John Paul Jones Hospital</option>
+                    <option value="37">Lake Martin Community Hospital</option>
+                    <option value="65">Lakeland Community Hospital</option>
+                    <option value="44">Laurel Oaks Behavioral Health Center</option>
+                    <option value="92">Lawrence Medical Center</option>
+                    <option value="76">Madison Hospital</option>
+                    <option value="64">Marshall Medical Center North</option>
+                    <option value="27">Marshall Medical Center South</option>
+                    <option value="116">Mary Starke Harper Geriatric Psychiatry Center</option>
+                    <option value="48">Medical Center Barbour</option>
+                    <option value="47">Medical Center Enterprise</option>
+                    <option value="12">Medical West</option>
+                    <option value="97">Mizell Memorial Hospital</option>
+                    <option value="79">Mobile Infirmary Medical Center</option>
+                    <option value="84">Monroe County Hospital</option>
+                    <option value="58">Mountain View Hospital</option>
+                    <option value="4">Noland Hospital Anniston</option>
+                    <option value="20">Noland Hospital Birmingham</option>
+                    <option value="45">Noland Hospital Dothan</option>
+                    <option value="91">Noland Hospital Montgomery</option>
+                    <option value="117">Noland Hospital Tuscaloosa</option>
+                    <option value="53">North Alabama Medical Center</option>
+                    <option value="93">North Alabama Shoals Hospital</option>
+                    <option value="9">North Alabama Specialty Hospital</option>
+                    <option value="11">North Baldwin Infirmary</option>
+                    <option value="66">North Mississippi Medical Center - Hamilton</option>
+                    <option value="94">Northport Medical Center</option>
+                    <option value="125">Northwest Medical Center</option>
+                    <option value="103">Prattville Baptist Hospital</option>
+                    <option value="21">Princeton Baptist Medical Center</option>
+                    <option value="80">Providence Hospital</option>
+                    <option value="104">Red Bay Hospital</option>
+                    <option value="62">Regional Medical Center of Central Alabama</option>
+                    <option value="102">Regional Rehabilitation Hospital</option>
+                    <option value="59">Riverview Regional Medical Center</option>
+                    <option value="5">RMC Anniston</option>
+                    <option value="6">RMC Stringfellow Memorial Hospital</option>
+                    <option value="2">Russell Medical Center</option>
+                    <option value="105">Russellville Hospital</option>
+                    <option value="22">Saint Vincent's East</option>
+                    <option value="100">Saint Vincent's Saint Clair</option>
+                    <option value="23">Select Specialty Hospital - Birmingham</option>
+                    <option value="1">Shelby Baptist Medical Center</option>
+                    <option value="54">South Baldwin Regional Medical Center</option>
+                    <option value="46">Southeast Health Medical Center</option>
+                    <option value="81">Springhill Medical Center</option>
+                    <option value="123">Tanner Medical Center East Alabama</option>
+                    <option value="118">Taylor Hardin Secure Medical Facility</option>
+                    <option value="36">The Sanctuary at the Woodlands</option>
+                    <option value="51">Thomas Hospital</option>
+                    <option value="112">Thomasville Regional Medical Center</option>
+                    <option value="113">Troy Regional Medical Center</option>
+                    <option value="119">Tuscaloosa VA Medical Center</option>
+                    <option value="24">UAB Callahan Eye Hospital</option>
+                    <option value="25">UAB Hospital</option>
+                    <option value="26">UAB Hospital - Highlands</option>
+                    <option value="71">Unity Psychiatric Care Huntsville</option>
+                    <option value="82">USA Children's and Women's Hospital</option>
+                    <option value="83">USA Health University Hospital</option>
+                    <option value="107">Vaughan Regional Medical Center</option>
+                    <option value="73">Walker Baptist Medical Center</option>
+                    <option value="33">Washington County Hospital and Nursing Home</option>
+                    <option value="60">Wiregrass Medical Center</option>                                                   
+                                                                                                   
+            </select>
+                </div>
+                <div class="county">
+                    <input type="text" placeholder="County Name" style="height: 5vh;width: 490px; border-radius: 4px;  width: 307px;
+                    margin-left: 30px;">
+                </div>
+                <button class="btn pld-btn1" style="display:flex; padding: 10px 12px; align-items: center; border: 1px solid #dbaf5d; background: #dbaf5d; color: #fff; font-weight: 600; font-size: 20px; position: relative; bottom: 5px; top: 3px; left: 30px;">Next<i class="bx bx-right-arrow-alt" ></i> </button>
+            </div>
+        </div>
+        <!-- </div> -->
+    </main>
+
+    <!-- ======= Footer ======= -->
+    <footer>
+        <div class="footercontent">
+            <div class="logopld">
+                <img src="assets/p1/home logo.png" alt="">
+            </div>
+            <div class="copyright">
+                <p>copyright&copy 2022 PLD</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        (async() => {
+
+            const topology = await fetch(
+                'https://code.highcharts.com/mapdata/countries/us/us-all.topo.json'
+            ).then(response => response.json());
+
+            Highcharts.getJSON('https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/us-population-density.json', function(data) {
+
+                // Make codes uppercase to match the map data
+                data.forEach(function(p) {
+                    p.code = p.code.toUpperCase();
+                });
+
+                // Instantiate the map
+                Highcharts.mapChart('container', {
+
+                    chart: {
+                        map: topology,
+                        borderWidth: 1
+                    },
+
+                    title: {
+                        text: 'US population density (/km²)'
+                    },
+
+                    exporting: {
+                        sourceWidth: 600,
+                        sourceHeight: 500
+                    },
+
+                    legend: {
+                        layout: 'horizontal',
+                        borderWidth: 0,
+                        backgroundColor: 'rgba(255,255,255,0.85)',
+                        floating: true,
+                        verticalAlign: 'top',
+                        y: 25
+                    },
+
+                    mapNavigation: {
+                        enabled: true
+                    },
+
+                    colorAxis: {
+                        min: 1,
+                        type: 'logarithmic',
+                        minColor: '#EEEEFF',
+                        maxColor: '#000022',
+                        stops: [
+                            [0, '#EFEFFF'],
+                            [0.67, '#4444FF'],
+                            [1, '#000022']
+                        ]
+                    },
+
+                    series: [{
+                        accessibility: {
+                            point: {
+                                valueDescriptionFormat: '{xDescription}, {point.value} people per square kilometer.'
+                            }
+                        },
+                        animation: {
+                            duration: 1000
+                        },
+                        data: data,
+                        joinBy: ['postal-code', 'code'],
+                        dataLabels: {
+                            enabled: true,
+                            color: '#FFFFFF',
+                            format: '{point.code}'
+                        },
+                        name: 'Population density',
+                        tooltip: {
+                            pointFormat: '{point.code}: {point.value}/km²'
+                        }
+                    }]
+                });
+            });
+
+        })();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+    /*>>>>>>>>>>>>About Start>>>>>>>*/
+    
+    .back-to-top {
+        background: #dbaf5d;
+        border-radius: 34px;
+    }
+    
+    .back-to-top:hover {
+        background: #0d1820;
+        color: #fff;
+    }
+    /* img {
+        width: 77%;
+        padding-top: 107px;
+        margin-left: 2px;
+    } */
+    
+    .portfolio-details .portfolio-description {
+        padding-top: 86px;
+        padding-left: 31px;
+        position: relative;
+        right: 270px;
+        top: auto;
+    }
+    
+    .sub-title {
+        display: inline-block;
+        font-weight: 900;
+        font-size: 19px;
+        background: -webkit-gradient(linear, left top, right top, color-stop(23%, #10c317), color-stop(64%, #15d09a));
+        background: #daad59;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        /* margin-bottom: 5px; */
+    }
+    
+    .sub-title:before {
+        position: absolute;
+        content: '';
+        width: 40px;
+        height: 3px;
+        right: -48px;
+        bottom: 7px;
+        background: #253d4c;
+    }
+    
+    .swiper-slide {
+        position: relative;
+        right: 270px;
+    }
+    
+    .tab-pane p {
+        position: relative;
+        left: 9px;
+        width: 98%;
+    }
+    
+    .nav li a {
+        font-size: 17px;
+    }
+    
+    #imageabt img {
+        position: relative;
+        top: 78px;
+        left: 2px;
+        margin-right: 52px;
+        width: 64%;
+        height: 85vh;
+    }
+    
+    @media (max-width:900px) {
+        #imageabt img {
+            position: relative;
+            left: 15px;
+            top: 85px;
+            width: 457%;
+        }
+    }
+    
+    @media screen and (min-width: 1200px) {
+        #imageabt {
+            width: 66%;
+            float: left;
+        }
+        .col-lg-4 {
+            /* margin-left: 720px; */
+            float: left;
+        }
+    }
+    
+    .portfolio-description {
+        max-width: 75%;
+        font-weight: 600;
+        font-size: 17px;
+        /* white-space: nowrap; */
+        position: relative;
+        /* right: 194px; */
+    }
+    
+    @media (max-width: 1200px) {
+        .portfolio-description {
+            margin-top: 73rem;
+            /* position: relative;
+        top: 23rem;
+        right: 124px; */
+            /* margin-top: 45rem; */
+            margin-left: 43px;
+            left: -151px;
+            width: 59%;
+        }
+    }
+    
+    .nav-pills>li {
+        float: left;
+        background: rgb(255, 255, 255);
+        color: white;
+        border-radius: 6px;
+        margin: 11px 13px;
+        font-size: 17px;
+        width: 150px;
+        text-align: center;
+    }
+    
+    .wrapper {
+        display: flex;
+        overflow: hidden;
+        justify-content: space-between;
+    }
+    
+    .nav {
+        margin-left: 29px;
+    }
+    
+    .container-pill {
+        border: 1px solid;
+        background: rgb(37, 61, 76);
+        font-size: 22px;
+        font-weight: 500;
+        color: white;
+        position: relative;
+        right: 245px;
+        width: 146%;
+        /* bottom: 20px; */
+    }
+    
+    @media screen and (max-width: 1200px) {
+        .container-pill {
+            float: left;
+            padding: 17px 37px 1px;
+            right: 66px;
+            width: 114%;
+        }
+    }
+    
+    .tab-content {
+        margin: 5px 0px 0px 30px;
+        font-size: 18px;
+    }
+    
+    .nav-pills>li.active>a,
+    .nav-pills>li.active>a:focus,
+    .nav-pills>li.active>a:hover {
+        color: #fff;
+        background-color: #dbaf5d;
+    }
+    
+    .about-best ul {
+        position: relative;
+        border: 1px solid transparent;
+        background-color: rgb(244, 244, 244);
+        font-weight: 400;
+        font-size: 19px;
+        display: inline-block;
+        padding: 8px 5px 5px;
+        list-style: none;
+        color: black;
+        /* bottom: 22rem; */
+        right: 25rem;
+        top: 5px;
+    }
+    
+    @media screen and (max-width: 1200px) {
+        .about-best ul {
+            float: left;
+            top: 13px;
+            right: 65px;
+        }
+    }
+    
+    .portfolio-details .portfolio-description h2 {
+        font-size: 38px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        min-width: 163%;
+    }
+    
+    @media screen and (max-width: 1200px) {
+        .portfolio-details .portfolio-description h2 {
+            font-size: 16px;
+            font-weight: 900;
+        }
+    }
+    
+    .portfolio-details .portfolio-description p {
+        padding: 0;
+        min-width: 218%;
+        font-weight: 500;
+        line-height: 2.0;
+    }

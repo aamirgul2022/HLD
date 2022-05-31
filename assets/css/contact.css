@@ -1,0 +1,102 @@
+#portfolio-details {
+    background: #f2f7fa;
+    /* display: flex; */
+    padding-top: 7rem;
+}
+
+.portfolio-description1 {
+    position: relative;
+    bottom: 5rem;
+}
+
+.one-contact-area .contact-content {
+    padding: 100px 0 100px;
+    /* max-width: 635px;
+    margin-left: 50px; */
+}
+
+
+/* .portfolio-description1 {
+    padding-top: 37px;
+} */
+
+@media screen and (max-width:1200px) {
+    #image-add img {
+        width: 247%;
+        position: relative;
+        left: 77px;
+        top: 21px;
+    }
+}
+
+img {
+    width: 95%;
+}
+
+.wrapper {
+    overflow: hidden;
+    /* display: flex; */
+}
+
+@media screen and (max-width:1200px) {
+    #image-add {
+        width: 50%;
+        float: left;
+    }
+    .col-lg-6 {
+        /* margin-left: 720px; */
+        float: left;
+    }
+}
+
+.col-lg-6 {
+    position: relative;
+    right: 15px;
+    top: 84px;
+}
+
+@media screen and (max-width:1200px) {
+    .portfolio-description1 {
+        padding-top: 11rem;
+        position: relative;
+        right: 116px;
+        width: 143%;
+        bottom: 58px;
+    }
+}
+
+button.btn.btn-primarysend {
+    padding: 12px;
+    font-size: 15px;
+    margin: 10px 0px 0px 1px;
+    background: #dbaf5d;
+    border: 1px solid #dbaf5d;
+    color: #fff;
+    position: relative;
+    bottom: 32px;
+    /* left: 42px; */
+}
+
+
+/* .btn-primarysend {
+    padding: 12px;
+    font-size: 15px;
+    margin: 10px 0px 0px -6px;
+    background: #dbaf5d;
+    border: 1px solid #dbaf5d;
+    color: #fff;
+} */
+
+
+/* .bx-user { 
+    position: relative;
+    bottom: 29px;
+    left: 5px;
+} */
+
+
+/* 
+.form-control {
+    height: 39px;
+    padding: 6px 34px;
+} */

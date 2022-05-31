@@ -1,0 +1,22 @@
+@media(max-width:990px) {
+    .read-blogtext {
+        padding-top: 19rem;
+    }
+}
+
+@media (max-width:990px) {
+    #image-loan img {
+        width: 1384%;
+    }
+}
+
+.read-blogtext h1 {
+    margin: 37px;
+    padding-top: 49px;
+    font-weight: 900;
+}
+
+.read-blogtext p {
+    width: 91%;
+    padding-left: 35px;
+}

@@ -1,0 +1,13 @@
+@media (max-width:990px) {
+    .read-blogtextmort {
+        padding-top: 15rem;
+    }
+}
+
+@media (max-width:990px) {
+    #imagemort img {
+        width: 1450%;
+        position: relative;
+        left: 4px;
+    }
+}

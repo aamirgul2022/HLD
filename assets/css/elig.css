@@ -1,0 +1,17 @@
+@media (max-width:990px) {
+    .read-blogtextelig {
+        padding-top: 15rem;
+    }
+}
+
+@media (max-width:990px) {
+    #imageelig img {
+        width: 1160%;
+        position: relative;
+        left: 4px;
+    }
+}
+
+#imageelig {
+    height: 96vh;
+}
